@@ -6,7 +6,8 @@
 
 - (void)initialize
 {
-     character = (Character*)[CCBReader load:@"Character"];
+    [self addObstacle];
+    character = (Character*)[CCBReader load:@"Character"];
     [physicsNode addChild:character];
 }
 
